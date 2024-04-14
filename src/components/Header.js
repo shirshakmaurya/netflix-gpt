@@ -11,7 +11,7 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector((store) => store.user);
-  console.log("user = ", user);
+  // console.log("user = ", user);
 
   const handleSignout = () => {
     signOut(auth)
@@ -54,7 +54,9 @@ const Header = () => {
             src={user?.photoURL}
             alt="profile-icon"
           />
-          <button onClick={handleSignout}>Sign out</button>
+          <button className="text-white font-bold" onClick={handleSignout}>
+            Sign out
+          </button>
         </div>
       )}
     </div>
