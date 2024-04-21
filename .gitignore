@@ -24,3 +24,7 @@ yarn-error.log*
 
 
 /src/utils/firebase.js
+/src/utils/openaiConstants.js
+/src/utils/geminiConstants.js
+
+.env
